@@ -1,4 +1,4 @@
-#task 2
+
 
 import requests
 import json
@@ -14,7 +14,7 @@ print(f"Pokemon abilities:  {pikachu_data['abilities']}")
 
 # task 3
 def fetch_pokemon_data(pokemon_name):
-    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}"  # Fixed URL formatting
+    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}"  
     try:
         response = requests.get(url)
         json_data = response.text
